@@ -1,0 +1,16 @@
+# #AddHandler php5-script .php
+# 
+# # Begin EE Rewrite
+# 
+# RewriteEngine On
+# RewriteBase /
+# 
+# RewriteCond $1 ^(weblog|member|search|Forum_Name|home|register|feed|pastevents|site|thankyou|P[0-9]{2,8}) [NC] 
+# RewriteRule ^(.*)$ /index.php/$1 [L] 
+# 
+# #RewriteCond %{REQUEST_FILENAME} !-f
+# #RewriteCond %{REQUEST_FILENAME} !-d
+# #RewriteRule . /index.php/$1 [L]
+# #End EE Rewrite
+# 
+# AddHandler php5-script .php

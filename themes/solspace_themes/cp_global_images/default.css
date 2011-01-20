@@ -1,0 +1,119 @@
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+
+
+#vgmodule {width:1000px;}
+#vgmodule #vgleft {width:180px; float:left; margin:0 20px 0 0; }
+#vgmodule #vgright {width:790px; float:left; }
+
+#vgleft ul {margin:0; padding:0 0 0 20px;}
+#vgleft ul li {}
+
+#vgcontent {}
+#vgcontent .heading1 {color:#FFF; font-size:13px;}
+#vgcontent form input {padding:2px;}
+#vgcontent form textarea {padding:2px;}
+#vgcontent form select {padding:2px;}
+#vgcontent form input:focus {background-color:#FDFDE4;}
+#vgcontent form textarea:focus {background-color:#FDFDE4;}
+#vgcontent .del a {font-weight:bold; color:red; font-size:150%;}
+#vgcontent a img {border:0;}
+
+#vgcontent .type_selector {}
+#vgcontent .type_selector .selector {background:url(blue_gradient_bg.gif) repeat-x;  -moz-border-radius:0 0 10px 10px; -webkit-border-radius:0 0 10px 10px;}
+#vgcontent .type_selector ul {padding:0 0 0 10px; margin:0;  list-style:none;}
+#vgcontent .type_selector ul li {float:left; padding:0 0 0 5px;}
+#vgcontent .type_selector ul li a {padding:10px 20px; display:block; outline:0;}
+#vgcontent .type_selector ul li:hover {background:url(red_gradient_bg.gif) repeat-x;}
+#vgcontent .type_selector ul li:hover a {color:#fff;}
+#vgcontent .type_selector ul li.selected {background:url(red_gradient_bg.gif) repeat-x;}
+#vgcontent .type_selector ul li.selected a {color:#fff;}
+#vgcontent .type_selector .xml {background:url(xml_icon.gif) no-repeat center left;}
+#vgcontent .type_selector .excel {background:url(excel_icon.png) no-repeat center left;}
+#vgcontent .type_selector .cronxml {background:url(icon_clock.png) no-repeat center left;}
+#vgcontent .type_selector .indicator {display:none;}
+#vgcontent #type_wrapper #xml_profile, #vgcontent #type_wrapper #cronxml_profile, #vgcontent #type_wrapper #excel_profile {display:none;}
+#vgcontent #type_wrapper #xml_importing, #vgcontent #type_wrapper #excel_importing {display:none;}
+
+#vgcontent .parse_xml {background:url(fetch_xml_btn.png) no-repeat; display:block; width:92px; height:20px; outline:0;}
+
+#vgcontent .box .idTabs {list-style:none; height:25px; margin:0; padding:0;}
+#vgcontent .box .idTabs li {float:left; width:140px;}
+#vgcontent .box .idTabs li a {height:14px; padding:5px; display:block; border:1px solid #CCC9A4; outline:0;}
+#vgcontent .box .idTabs li a.selected {border-bottom:2px solid #fff;}
+
+#vgcontent .profile_explain {margin:0; padding:5px 0 0 5px;}
+
+#vgmodule .success {padding:5px; border:1px solid #CCC9A4; background:#FDFDED; -moz-border-radius:3px; -webkit-border-radius:3px;}
+#vgcontent .add {float:right; display:block; background:url(arrow_right.gif) no-repeat; height:14px; width:14px; text-indent:-9999px;}
+#vgcontent .delete {height:15px; width:15px; text-indent:-9999px;}
+#vgcontent .primary {background:#FFDFE2; border:1px solid #FF7477;}
+
+#vgcontent #view_import .entry_title input {width:190px;}
+#vgcontent #view_import .fields .field_name {float:left; width:90px; text-align:right; padding:0 10px 0 0;}
+#vgcontent #view_import .fields .content {float:left; width:315px;}
+#vgcontent #view_import .fields .content textarea {width:305px; height:50px;}
+#vgcontent #view_import .fields .format {float:left; width:75px;}
+#vgcontent #view_import .fields .format select {width:75px;}
+
+
+#vgcontent table .oddzebra td {background:#DCE1E5}
+
+#vgcontent .ajax_assigned_cats .delete {height:16px; width:16px; display:block; float:right; background:url(delete.png)}
+
+
+#vgcontent .tableCellOne, #vgcontent .tableCellTwo {vertical-align:top;}
+
+/* tables */
+table.tablesorter {
+font-family:arial;
+background-color: #CDCDCD;
+font-size: 8pt;
+width: 100%;
+text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+background-color: #e6EEEE;
+border: 1px solid #FFF;
+font-size: 8pt;
+padding: 4px;
+}
+table.tablesorter thead tr .header {
+background-image: url(bg.gif);
+background-repeat: no-repeat;
+background-position: center right;
+cursor: pointer;
+}
+table.tablesorter tbody{
+border-left:#CDCDCD 1px solid;
+}
+table.tablesorter tbody td {
+color: #3D3D3D;
+padding: 4px;
+background-color: #FFF;
+vertical-align: top;
+border-bottom:#CDCDCD 1px solid;
+border-right:#CDCDCD 1px solid;
+}
+table.tablesorter tbody tr.odd td {background-color:#EEF4F9;}
+
+table.tablesorter tbody tr.over td {
+background-color:#E6EEEE;
+}
+table.tablesorter thead tr .headerSortUp {
+background-image: url(asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+background-image: url(desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
+table.tablesorter tfoot tr td {background-color: #768E9D; padding:5px; color:#fff; font-weight:bold;}
+table.tablesorter tfoot tr td a {color:#fff;}
+table.tablesorter tfoot tr td a:hover {text-decoration:underline;}

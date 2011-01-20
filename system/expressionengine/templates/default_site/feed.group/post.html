@@ -1,0 +1,64 @@
+{embed=site/code_header}
+{embed=site/header}
+
+<div id='mainCntr' class='clearfix'>
+	<div id='' class='panel clearfix selected'>
+		
+		<div id='feedCntrLeft'>
+		
+			{exp:channel:entries paginate='bottom' channel="feed" limit="1"}			
+			
+				<div class='feedPostCntr'>
+					<h2 class=''>{entry_date format="%M %d, %h:%i %A"}</h2>
+					<a href='{title_permalink="feed/index"}' class='bigYellow mt20 block' href=''>{title}</a>
+					
+					<p>
+						{feed_content}
+					</p>
+					
+					<ul>
+						<li>Posted by: <a href='{url}'>{author}</a></li>
+						<!--<li class='mt10'>Comments <a href='#'>111</a></li>-->
+					</ul>
+				</div>
+					
+			{/exp:channel:entries}
+			
+		</div><!-- x #feedCntr Left -->
+		
+		<div id='feedCntrRight'>
+			<div id='recentArticles'>
+				<span>Recent Posts</span>
+				
+				{exp:channel:entries channel="feed" limit="4" dynamic="no"}
+				<span class='mt10'>{entry_date format="%M %d, %h:%i %A"}</span>
+				<a href='{title_permalink="feed/post"}'>{title}</a>
+				{/exp:channel:entries}
+			
+			</div>
+		
+			<!--
+			<div class='pinkLine mt15 mb15'></div>
+			
+			<span>Archives</span>
+			
+			<ul id='archives'>
+				<li><a href='#'>August 2010</a></li>
+				<li><a href='#'>July 2010</a></li>
+				<li><a href='#'>June 2010</a></li>
+				<li><a href='#'>May 2010</a></li>
+			</ul>
+			-->
+			
+			<div class='pinkLine mt15 mb15'></div>
+			
+			<img class='mt20' id='bigCircle' src='{site_url}{custom_path}images/layout/bigCircle.png' alt='big circle' />
+		
+		</div><!-- x #feedCntr Right -->
+		
+	</div><!-- x#panel1 -->	
+</div><!-- x#mainCntr -->
+
+
+{embed=site/footer}
+{embed=site/code_footer}	

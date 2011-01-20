@@ -1,0 +1,45 @@
+<?php
+
+if(isset($_POST['notificationEmail'])){
+	
+	$email_address = $_POST['notificationEmail'];
+	
+	$list_id = 'd7a38d7abf';
+	$campaignId = '1839525';
+		
+	$this->EE->load->library('MCAPI');
+	
+	/** 
+	Note that if you are not passing merge_vars, you will still need to pass a "blank" array. That should be either:
+	$merge_vars = array('');  - or - $merge_vars = '';
+	**/
+	$merge_vars = '';
+	
+	$retval = $this->EE->mcapi->listSubscribe($list_id, $email_address, $merge_vars, $email_type='html', $double_optin=false, $update_existing=false, $replace_interests=true, $send_welcome=false);
+	
+	if($this->EE->mcapi->errorCode){	
+	
+		$returnArr = array();
+		$returnArr['msg'] = 'Error! Code='.$this->EE->mcapi->errorCode.' Msg='.$this->EE->mcapi->errorMessage;
+		$returnArr['success'] = 0;
+	
+		echo json_encode($returnArr);
+	
+	}else{
+		
+		$returnArr = array();
+		$returnArr['msg'] = 'Successs!';
+		$returnArr['success'] = 1;
+	
+		echo json_encode($returnArr);
+	}
+			
+}else{
+	
+	$returnArr = array();
+	$returnArr['msg'] = 'No email provided';
+	$returnArr['success'] = 0;
+	
+	echo json_encode($returnArr);
+}
+?>

@@ -1,0 +1,154 @@
+
+/** --------------------------------------------
+/**  Flow UI for User Module
+/** --------------------------------------------*/
+
+#sitesdropmenu, #publishdropmenu
+{
+	z-index: 201;
+}
+
+.clearfix:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix { display: inline-block; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+/* End hide from IE-mac */
+/* !style tabs */
+a div.tab
+{
+	font-family: 'Lucida Grande', Verdana, Geneva, Arial, sans-serif;
+	font-size: 13px;
+	border: none;
+	border-right: 7px solid #fff;
+	background: #95969a url(<?php echo ee()->config->item('theme_folder_url');?>solspace_themes/global/flow_ui/images/inactive_tab.png) center top repeat-x;
+	color: #555;
+	white-space: nowrap;
+}
+
+a div.tab.lastTab
+{
+	border-right: 1px solid #fff;
+}
+
+body a div.altTabSelected
+{
+	background: transparent url(<?php echo ee()->config->item('theme_folder_url');?>solspace_themes/global/flow_ui/images/active_tab.png) center top no-repeat;
+	color: #fff;
+	padding-bottom: 5px;
+	/* 	border: none */
+}
+
+div.tableHeading { background: transparent; }
+
+.flow-form
+{
+	background: #5f6e86 url(<?php echo ee()->config->item('theme_folder_url');?>solspace_themes/global/flow_ui/images/form_bg.png) left 3px repeat-x;
+	border-right: 1px solid #fff;
+	z-index: 0;
+}
+
+.flow-filler
+{
+	background: #5f6e86 url(<?php echo ee()->config->item('theme_folder_url');?>solspace_themes/global/flow_ui/images/form_bg.png) left 3px repeat-x;
+	border-right: 1px solid #fff;
+	z-index: 0;
+	height: 50px;
+	position: relative;
+}
+
+.flow-form .flow-table { /* 	margin: 0 1em; */ }
+
+.tableBorder
+{
+	margin: 0 10px;
+	width: 100%;
+	border: 1px solid #222;
+}
+
+.divBorder
+{
+	border: 1px solid #222;
+	margin-left: 10px;
+}
+
+.solspaceHeader { 
+	font-size: 11px; 
+	font-weight: bold; 
+	white-space: nowrap; 
+	padding: 5px 6px 5px 6px; 
+	color: #D3D8E0;
+	height: 20px;
+	line-height: 20px;
+	background: #20262d url(<?php echo ee()->config->item('theme_folder_url');?>solspace_themes/global/flow_ui/images/heading_bg_alt.png) left top repeat-x;
+}
+
+.tableHeadingAlt
+{
+	color: #D3D8E0;
+	height: 20px;
+	line-height: 20px;
+	background: #20262d url(<?php echo ee()->config->item('theme_folder_url');?>solspace_themes/global/flow_ui/images/heading_bg.png) left top repeat-x;
+}
+
+.tableBorder .firstCol
+{
+	border: 1px solid #666;
+	border-width: 1px 0 1px 1px;
+}
+
+.tableBorder .lastCol
+{
+	border: 1px solid #666;
+	border-width: 1px 1px 1px 0;
+}
+
+.tableBorder .innerCol
+{
+	border: 1px solid #666;
+	border-width: 1px 0 1px 0;
+}
+
+.oneCol
+{
+	border: 1px solid #666;
+	border-width: 1px;
+}
+
+/** --------------------------------------------
+/**  Search CSS
+/** --------------------------------------------*/
+
+.tag_search_keywords
+{
+	margin: 0 5px 0 0;
+}
+
+.tag_search_button
+{
+	display: inline;
+	background-color: #374c80;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#546aa2), to(#2f4068));
+	background-repeat: repeat;
+	
+	border: 1px solid #aaa;
+	
+	color: #fff;
+	font-weight: bold;
+	font-family: arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	
+	margin: 0 7px 0 0;
+	padding: 1px 3px 1px 3px;
+}

@@ -1,0 +1,48 @@
+*
+{
+	font-family: Times;
+	font-size: 16px;
+	color: #000;
+	background-color: #fff;
+	text-decoration: none;
+	border: none;
+	font-weight: normal;
+	line-height: normal;
+	font-style: normal;
+	font-variant: normal;
+}
+
+img
+{
+	display: none;
+}
+
+.unselectable strong
+{
+	font-weight: bold;
+}
+
+/*
+-----------------------------------
+ Galley Notes
+-----------------------------------
+*/
+
+span.wgnote
+{
+	margin: 0 3px 0 3px;
+	padding: 0 5px 0 5px;
+}
+
+
+span.wgnotecolor_1
+{
+	background-color: #000;
+	color: #fff;
+}
+
+span.wgnotecolor_2
+{
+	background-color: #000;
+	color: #ff0;
+}

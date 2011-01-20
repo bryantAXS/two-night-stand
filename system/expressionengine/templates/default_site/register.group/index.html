@@ -1,0 +1,141 @@
+{embed=site/code_header}
+{embed=site/header}
+
+<div id='mainCntr' class='clearfix'>
+		
+	<div id='' class='panel clearfix selected'>	
+
+		<div id='signUp' class='clearfix'>
+			
+			<div class='signUpLeft'>
+				
+				<h2>Collaboration #1 Invite Request Registration</h2>
+				
+				<a class='bigYellow block mt30'>September 24-25, 2010</a>
+				<a class='bigYellow mt15'>Chicago, IL</a>
+			
+				<ul class='mt25'>
+					<li><span class='strong'>When:</span> September 24-25 2010, Friday 6-11, Saturday 10-8</li>
+					<li><span class='strong'>Where:</span> The Coop, Chicago IL<a href='http://maps.google.com/maps?q=The+Coop,+845+W.+Fulton+Market+%23202+Chicago+IL&ie=UTF8&hl=en&hq=The+Coop,+845+W.+Fulton+Market+%23202&hnear=Chicago,+Cook,+Illinois&ll=41.886784,-87.648904&spn=0.01107,0.019033&t=h&z=16&iwloc=A' class='ml5'>Map</a></li>
+					<li><span class='strong'>Cost:</span> $25 / Paid at event</li>
+					<li><span class='strong'>Deadline:</span> Sign up before September 1st to make it onto the 1st event list.</li>
+					<br />
+					</ul>
+				
+				<p class='mt25'>
+					Due to a large number of applications we cannot accept everyone.  Participants will be randomly selected
+					based on their expertise.  If you are selected you will be notified 2 weeks before the event.
+				</p>
+				
+				<div class='pinkLine mt25 mb25'></div>
+				
+				<h3>Event FAQs</h3>
+				
+				<h4>What is Two Night Stand?</h4>
+				<p class='mt10'>
+					Two Night Stand is an invite only event that brings together a randomly selected group of creatives and 
+					catalogs the creative process over a two day period. 
+				</p>
+				
+				<p class='mt10'>
+					We consider it a creative growth experience.
+				</p>
+				
+				<h4>How many people are participating?</h4>
+				<p class='mt10'>
+					Collaboration #1 requires 20 creatives; designers, illustrators, photographers, brainstormers and 
+					copywriters/bloggers. Participation is invite only. If you are interested in participating, fill out 
+					the form to the right and if you are selected to participate you will be notified.
+				</p>
+				
+				<h4>What do I need to bring?</h4>
+				<p class='mt10'>
+					Bring the tools of your trade. Designers, you probably want to bring your laptop, idea people your brain 
+					and a sketchbook, photographers a camera, etc. Bring whatever will help you to ideate.
+				</p>
+				
+				<h4>Why is there a cost?</h4>
+				<p class='mt10'>
+					The $25 fee covers food and basic supplies for the event. The fee is paid upon check-in at event.
+				</p>
+				
+			</div><!-- x #signUpLeft -->
+			
+			<div class='signUpRight'>
+			
+				<form class='signUpForm' method='post' action='' enctype='multipart/form-data'>
+					
+					<h3>Request an Invite</h3>
+					
+					<div class='pinkLine mt15 mb15'></div>
+					
+					{exp:freeform:form
+					   collection="Register Form"
+					   required="name|email|skillset|description"
+					   return="register/success"
+					   file_upload="Registrant Photo Uploads"
+					   prevent_duplicate_on="email"
+					}
+					
+					<input type='hidden' name='formName' value='signUpForm' />
+					
+					<label for='name'>Name <span class='red'>*</span></label>
+					<input class='text' type='text' name='name' value='' />
+					
+					<label for='email'>Email <span class='red'>*</span></label>
+					<input class='text' type='text' name='email' value='' />
+					
+					<label for='twitter'>Twitter</label>
+					<input class='text' type='text' name='twitter' value='' />
+					
+					<label for='website'>Website</label>
+					<input class='text' type='text' name='website' value='' />
+					
+					<h3 class='mt20'>For Event</h3>
+					
+					<div class='pinkLine mt15 mb15'></div>
+					
+					<label for='skillset'>Creative Speciality <span class='red'>*</span></label>
+					<select name='skillset'>
+						<option value=''></option>
+						<option value='web designer'>Web Designer</option>
+						<option value='Web Developer: Front-End'>Web Developer: Front-End</option>
+						<option value='Web Developer: Back-End'>Web Developer: Back-End</option>
+						<option value='Illustrator'>Illustrator</option>
+						<option value='Graphic Design'>Graphic Design</option>
+						<option value='Copyrighter'>Copyrighter</option>
+						<option value='Photographer'>Photographer</option>
+						<option value='Blogger'>Blogger</option>
+						<option value='Other'>Other</option>
+					</select>
+					
+					<label class='mt20' for='file1'>Upload profile photo 140 x 140</label>
+					<input type='file' name='file1' />
+					
+					<label class='mt20' for='description'>Why do you want to be apart of this experience? <span class='red'>*</span></label>
+					<textarea class='text' name='description'></textarea>
+													
+					<div class='pinkLine mt15 mb15'></div>
+					
+					<div class='clearfix'>
+						<input class='left'type='checkbox' name='notify' /> 
+						<label id='notifyCopy' class='left'>Notify me via email when the next event registration opens.</label>
+					</div>
+					
+					<button type='submit' id='signUpFormSubmit' value='submit'>Register!</button>
+					
+					{/exp:freeform:form}
+					
+				</form>
+			
+			</div><!-- x #signUpRight -->
+		
+		</div><!-- x #signUp -->
+
+	</div><!-- x#panel1 -->
+		
+</div><!-- x#mainCntr -->
+
+
+{embed=site/footer}
+{embed=site/code_footer}

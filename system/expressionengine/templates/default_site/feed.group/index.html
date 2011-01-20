@@ -1,0 +1,52 @@
+{embed=site/code_header}
+{embed=site/header}
+
+<div id='mainCntr' class='clearfix'>
+	<div id='' class='panel clearfix selected'>
+		
+		<div id='feedCntrLeft' class=''>
+		
+			{exp:channel:entries paginate='bottom' channel="feed" limit="10"}			
+			
+				<div class='feedPostCntr'>
+					<h2 class=''>{entry_date format="%M %d, %h:%i %A"}</h2>
+					<a href='{title_permalink="feed/index"}' class='bigYellow mt20 block' href=''>{title}</a>
+					
+					<p class='snippet'>
+						{feed_snippet}<a href='{title_permalink="feed/post"}'>...more</a>
+					</p>
+					
+					<ul>
+						<li>Posted by: <a href='{url}'>{author}</a></li>
+						<!--<li class='mt10'>Comments <a href='#'>111</a></li>-->
+					</ul>
+				</div>
+			
+				{paginate}
+
+				{if next_page}
+				<a class='paginate' href="{auto_path}">More</a>
+				{/if}
+				
+				{if previous_page}
+				<a class='paginate' href="{auto_path}">Previous</a> &nbsp;
+				{/if}
+				
+				{/paginate}
+				
+			{/exp:channel:entries}
+			
+		</div><!-- x #feedCntr Left -->
+		
+		<div id='feedCntrRight'>
+			
+			<ul id='twitter_reactions'></ul>
+		
+		</div>
+		
+	</div><!-- x#panel1 -->	
+</div><!-- x#mainCntr -->
+
+
+{embed=site/footer}
+{embed=site/code_footer}	

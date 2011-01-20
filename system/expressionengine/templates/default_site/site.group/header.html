@@ -1,0 +1,30 @@
+<div id='notificationDropDown'>
+	<p>
+		Sign up with your email address to be notified for our next event.
+	</p>
+	<input type='text' name='notificationEmail' id='notificationEmail' />
+	<button id='submitNotification'>Submit</button>
+</div>
+
+<div id='headerCntr'>
+	<div id='headerContent' class='clearfix'>
+		
+		<img class='left' src='{site_url}{custom_path}images/layout/logo_triangle.png' alt='2 night stand logo'>
+		
+		<h1>Two Night Stand</h1>
+		
+		<span class='slogan'>A collaborative experiment with beautiful results.</span>
+		
+		<a href='#' id='headerNotification' class=''>Next Event Notification</a>
+	
+	</div><!-- x #headerContent -->
+</div><!-- x #headerCntr -->
+
+<div id='pinkLineTop' class='pinkLine mt0 mb0'></div>
+
+<ul id='mainNav' class='clearfix'>
+	<li class='{if segment_1 == "home" || segment_1 == ""} on{/if}'><a rel='1' href='{path="home"}'>Home</a></li>
+	<li class='{if segment_1 == "register"}  on{/if}'><a rel='2' href='{path="register"}'>Register</a></li>
+	<li class='{if segment_1 == "feed"} on{/if}'><a rel='3' href='{path="feed"}'>Follow The Feed</a></li>
+	<!--<li class='{if segment_1 == "pastevents" || segment_1 == ""} on{/if}'><a rel='4' href='{path="pastevents"}'>Past Events</a></li>-->
+</ul>
